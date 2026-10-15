@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated AHGSL paper when its final publication details are available."
+title: "AHGSL: Adaptive Heterogeneous Graph Structure Learning"
+authors:
+  - family-names: Ahmed
+    given-names: Abbas M.
+type: software

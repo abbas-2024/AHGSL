@@ -1,0 +1,19 @@
+# Python cache / virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local datasets (obtain separately; do not commit by default)
+data/
+src/
+
+# Local/editor/system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local logs and temporary files
+*.log
+*.tmp

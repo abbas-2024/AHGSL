@@ -1,0 +1,10 @@
+# Direct runtime dependencies imported by the AHGSL implementation and utilities.
+# Install a PyTorch build appropriate for your CPU/GPU from https://pytorch.org/get-started/locally/.
+numpy
+pandas
+scikit-learn
+torch
+matplotlib
+openpyxl
+lxml
+Pillow
