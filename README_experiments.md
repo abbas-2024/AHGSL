@@ -43,9 +43,16 @@ This mapping should be checked against the final numbered equations and algorith
 
 Consult the configuration dictionaries in `ahgsl/train.py`, `ahgsl/tcga.py`, and `ahgsl/model.py` for actual parameter defaults. Do not rely on settings copied into earlier manuscript drafts without comparing them to these files.
 
-## Data required for a fresh run
+## Datasat
 
-The supplied archive does not contain the dataset files. The yeast suite requires 12 FunCat ARFF split files plus the two Mulan yeast ARFF files. The TCGA suite requires `data.csv` and `labels.csv` with the schema described in the main README. Use `AHGSL_YEAST_DIR`, `AHGSL_MULAN_DIR`, and `AHGSL_TCGA_DIR` to point to local data directories.
+Dataset	Data type	Task	Instances (train/valid/test)	Features	Labels	Cardinality	Density
+Cellcycle	Yeast gene expression (FunCat)	Multi-label	1630 / 852 / 1284	77	17	2.07	0.122
+Church	Yeast gene expression (FunCat)	Multi-label	1632 / 848 / 1284	26	17	2.07	0.122
+Derisi	Yeast gene expression (FunCat)	Multi-label	1610 / 845 / 1278	63	17	2.07	0.122
+Eisen	Yeast gene expression (FunCat)	Multi-label	1058 / 530 / 837	79	16	2.31	0.144
+yeast-14 (Mulan)	Yeast gene expression (Mulan)	Multi-label	1275 / 225 / 917	103	14	4.24	0.303
+TCGA Pan-Cancer	RNA-seq (human tumors)	Multiclass (5 types)	801 (5-fold CV)	20,531*	5	1.00	0.200
+
 
 ## Reproduction checklist
 
